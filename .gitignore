@@ -1,0 +1,16 @@
+# DISCLAIMER.md · Licensed under the MIT License. License: MIT © 2026 dhRobin Systems · Provided as-is, see the disclaimer.
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local state (watermark, processed tickets, cluster registry)
+data/
+
+# Tooling
+node_modules/
+coverage/
+npm-debug.log*
+*.log
+.DS_Store

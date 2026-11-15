@@ -1,0 +1,37 @@
+{
+  "name": "n8n-hubspot-support-ticket-to-product-feedback-aggregator",
+  "version": "1.0.0",
+  "description": "n8n workflow that scans closed and escalated HubSpot tickets, extracts feature requests, bug patterns and churn friction with an LLM, clusters similar requests, and syncs ARR-weighted product feedback records to Linear, Jira or Notion. DISCLAIMER.md · Licensed under the MIT License. License: MIT © 2026 dhRobin Systems · Provided as-is, see the disclaimer.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "feedback-aggregator": "src/index.js"
+  },
+  "scripts": {
+    "lint": "node scripts/lint.js",
+    "test": "node --test tests/*.test.js",
+    "check:workflow": "node scripts/build-workflow.js --check",
+    "build:workflow": "node scripts/build-workflow.js",
+    "verify": "npm run lint && npm run check:workflow && npm test",
+    "demo": "node src/index.js demo",
+    "run:once": "node src/index.js run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "n8n",
+    "hubspot",
+    "support-tickets",
+    "product-feedback",
+    "llm",
+    "linear",
+    "jira",
+    "notion",
+    "arr",
+    "revops"
+  ],
+  "author": "DH Robin | dhRobin Systems (https://dhrobinsystems.com)",
+  "homepage": "https://dhrobinsystems.com",
+  "license": "MIT"
+}
