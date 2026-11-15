@@ -29,6 +29,8 @@ The point is the ARR column. "Twelve tickets asked for SSO" is an anecdote; "SSO
 
 ## Architecture overview
 
+![Workflow Overview](./assets/workflow-overview.png)
+
 ```
  Schedule (every 6 h) / Manual
             │
